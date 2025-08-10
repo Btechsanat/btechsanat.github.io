@@ -672,4 +672,28 @@ section { margin:1.4rem 0; padding:1.2rem; border-radius:12px; background: var(-
       0 0 60px #ffcc00;
   }
 }
+/* Mobile responsiveness for the title */
+@media screen and (max-width: 768px) {
+  .tech-title {
+    font-size: 2rem;   /* smaller for tablets/mobiles */
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .tech-title span {
+    font-size: 2.2rem; /* keep name slightly bigger */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tech-title {
+    font-size: 1.6rem; /* even smaller for small phones */
+  }
+
+  .tech-title span {
+    font-size: 1.8rem;
+  }
+}
+
 
