@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanat Patra | Home</title>
+
+  <!-- Styles & libs -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="header">
+  <div class="brand">
+    <img src="profile.jpg" alt="Sanat Kumar Patra" class="brand-photo"/>
+    <div>
+      <h1 class="brand-name">Sanat Kumar Patra</h1>
+      <p class="brand-tag">B.tech-Robotics & Automation</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <ul class="nav-list" id="navList" aria-hidden="true">
+      <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="Sanat_cv.pdf" download>Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- hamburger moved to the corner; theme toggle removed -->
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span class="hamburger"></span>
+  </button>
+</header>
+
+<div id="particles-js"></div>
+
+  <main>
+    <section class="hero">
+  <canvas id="particles"></canvas>
+  
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="profile_2.jpg" alt="Profile Picture">
+    </div>
+    <div>
+      <h1 class="welcome-title">HELLO — I’M SANAT</h1>
+      <p class="hero-text">
+        Welcome to my portfolio! This collection showcases my work, skills, and  experiences, offering a glimpse into my professional journey and creative pursuits.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <div class="cta">
+        <!-- <a href="projects.html" class="btn">View Projects</a> -->
+        <!-- <a href="contact.html" class="btn btn-outline">Get in Touch</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    
+      <!-- About preview -->
+      <section data-aos="fade-up" data-aos-delay="220">
+        <h3>About Me</h3>
+        <p>I am a Robotics & Automation engineering student. I enjoy designing embedded systems, working with sensors/actuators, and applying machine learning for predictive tasks. I have hands-on experience with Arduinos, ESP32, Raspberry Pi and cloud dashboards.</p>
+        <div class="chips" style="margin-top:.8rem;">
+          <span class="chip"> Embedded Systems ,</span>
+          <span class="chip"> IoT ,</span>
+          <span class="chip"> Machine Learning ,</span>
+          <span class="chip"> Python</span>
+        </div>
+        <div style="margin-top:.9rem;">
+          <a href="about.html" class="btn">Read more</a>
+        </div>
+      </section>
+
+      <!-- Projects preview -->
+      <section data-aos="fade-up" data-aos-delay="320">
+        <h3>Projects</h3>
+        <div class="section-grid">
+          <div class="card">
+            <strong>Home Automation & Weather Monitor</strong>
+            <p class="muted">ESP32 + cloud dashboard for sensor monitoring and device control.</p>
+          </div>
+        </div>
+        <div style="margin-top:.8rem;"><a href="projects.html" class="btn">Show All Projects</a></div>
+      </section>
+      
+    
+  </main>
+
+  <footer class="site-footer" data-aos="fade-up">
+      <div class="footer-social">
+        <a href="https://github.com/Btechsanat" target="_blank" rel="noopener" class="social github" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sanat-kumar-patra-78b527294" target="_blank" rel="noopener" class="social linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:sanatpatra37@gmail.com" class="social mail" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+918167416197" class="social phone" title="Call"><i class="fas fa-phone"></i></a>
+      </div>
+      
+
+    <p>&copy; 2025 Sanat Kumar Patra</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+<!-- Particle.js Library -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- Particle.js Config -->
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffd166" },
+    shape: { type: "circle" },
+    opacity: { value: 0.7, random: true },
+    size: { value: 4, random: true },
+    move: { 
+      enable: true, 
+      speed: 1, 
+      direction: "none", 
+      random: true, 
+      straight: false, 
+      out_mode: "out", 
+      bounce: false 
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "grab" },
+      onclick: { enable: true, mode: "push" }
+    },
+    modes: {
+      grab: { distance: 150, line_linked: { opacity: 0.3 } },
+      push: { particles_nb: 4 }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+</body>
+</html>
