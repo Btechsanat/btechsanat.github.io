@@ -857,4 +857,11 @@ main section p {
   line-height: 1.2;
   word-wrap: break-word;
 }
+#form-status {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#form-status.show {
+  opacity: 1;
+}
 
